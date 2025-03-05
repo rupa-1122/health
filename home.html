@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Healthcare Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color:lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.about-section {
+    background-color: lightblue;
+    padding: 50px 0;
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services-section {
+    padding: 50px 0;
+}
+
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.services-section ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.problems-section {
+    background-color: lightblue;
+    padding: 50px 0;
+}
+
+.problems-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.problems-section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dropdown select {
+    padding: 10px 100px;
+    font-size: 1rem;
+    border: 1px solid #929191;
+    border-radius: 4px;
+}
+
+.dropdown select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+#solution-display {
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><b>Natural Healthcare</b></h1>
+            <nav>
+                <ul>
+                    <li><a href="#problems">Common Problems</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <center><h1><u>Welcome to Natural Healthcare</u></h1></center>
+    <section id="problems" class="problems-section">
+        <div class="container">
+            <h2>Common Medical Problems and Solutions</h2>
+            <p>Select a problem to view its natural solution:</p>
+            <div class="dropdown">
+                <select id="problem-dropdown">
+                    <option value="default" selected disabled>Select a problem</option>
+                    <option value="Fever">Fever</option>
+                    <option value="Headache">Headache</option>
+                    <option value="Cough">Cough</option>
+                    <option value="Ear Pain">Ear Pain</option>
+                    <option value="Cold">Cold</option>
+                    <option value="Teeth Pain">Teeth Pain</option>
+                    <option value="Digestive">Digestive</option>
+                    <option value="Stomach Pain">Stomach Pain</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <div id="solution-display">
+                    <!-- Solutions will be displayed here dynamically based on selection -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Nutritional Counseling</li>
+                <li>Natural Medicine</li>
+                <li>Massage Therapy</li>
+                <li>Yoga and Meditation</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Natural Healthcare, where we believe in holistic wellness and natural healing methods. Our mission is to provide personalized healthcare solutions that integrate traditional and alternative medicine practices.</p>
+            <p>At Natural Healthcare, we focus on treating the root cause of health issues rather than just the symptoms. Our team of experienced healthcare professionals includes naturopaths, herbalists, nutritionists, and holistic therapists.</p>
+            <p>Whether you are seeking relief from chronic conditions, looking to improve your overall well-being, or interested in preventive care, we are here to support you on your journey to optimal health.</p>
+        </div>
+    </section>
+    
+   <section id="contact" class="contact-section">
+        <div class="container">
+         <center> <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+            <a href="mailto:contact@naturalhealthcare.com" class="button">Contact Now</a>
+        </div></center>
+    </section>
+    <center>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Natural Healthcare. All rights reserved.</p>
+        </div>
+    </footer></center>
+
+    <script>
+        // JavaScript to handle dropdown selection and display solutions
+        const problemDropdown = document.getElementById('problem-dropdown');
+        const solutionDisplay = document.getElementById('solution-display');
+
+        problemDropdown.addEventListener('change', function() {
+            const selectedProblem = this.value;
+
+            // Clear previous solution content
+            solutionDisplay.innerHTML = '';
+            // Append new solution based on selected problem
+            switch(selectedProblem) {
+               case 'Fever':
+                    solutionDisplay.innerHTML = '<h3>Fever</h3><p><strong>Medical Solution:</strong> Take paracetamol (acetaminophen) as directed by your healthcare provider. Ensure proper hydration and rest.<p><strong>Natural Solution:</strong> To reduce Fever, Drink lemon juice.<p> And To reduce a fever, start by staying hydrated with plenty of fluids like water or herbal teas. Rest is crucial, as it helps your body recover more effectively. You can also use a cool compress on your forehead and other pulse points, or take a lukewarm bath to gradually lower your body temperature. Dress in lightweight clothing to aid in cooling. Over-the-counter medications like acetaminophen (Tylenol) or ibuprofen (Advil, Motrin) can help reduce fever and alleviate discomfort, but be sure to follow the dosage instructions carefully. If your fever is high (103°F or higher), persists for several days, or is accompanied by severe symptoms, seek medical advice promptly.</p>';                
+                  break;
+                case 'Headache':
+                    solutionDisplay.innerHTML = `<h3>Headache</h3><p><strong>Medical Solution:</strong> Take Aspirin  as directed by your healthcare provider. Ensure proper hydration and rest. <p><strong>Natural Solution:</strong> To reduce Headache, Eat Ginger.<p> And To alleviate a headache, start by identifying potential triggers such as stress, dehydration, or lack of sleep. Hydrate yourself by drinking plenty of water and avoid alcohol and caffeine, which can contribute to dehydration. Rest in a quiet, dark room and practice relaxation techniques such as deep breathing or meditation to ease tension. Applying a cold or warm compress to your forehead or neck can help alleviate pain. Over-the-counter pain relievers like acetaminophen or ibuprofen can also provide relief, but be sure to follow the recommended dosage and guidelines. If headaches persist or worsen despite these measures, consult with a healthcare professional to determine the underlying cause and appropriate treatment.</p>`;
+                    break;
+                    case 'Cough':
+                    solutionDisplay.innerHTML = `<h3>Cough</h3><p><strong>Medical Solution:</strong> Take dextromethorphan (Robitussin, Delsym) as directed by your healthcare provider. Ensure proper hydration and rest.<p><strong>Natural Solution:</strong> To reduce Cough, you should put the myrobalan in your mouth.<p> And To reduce a cough, consider several effective home remedies. Stay hydrated by drinking plenty of fluids such as water, herbal teas, or warm broths to soothe the throat and thin mucus. Honey mixed with warm water or tea can provide relief due to its soothing properties. Use a humidifier or take a steamy shower to moisten the airways and ease coughing. Avoid irritants like smoke, dust, or strong odors that can trigger coughing fits. Over-the-counter cough suppressants or expectorants may help alleviate persistent coughs, but consult a healthcare provider before use, especially for prolonged symptoms or if coughing is accompanied by other concerning symptoms like chest pain or difficulty breathing.</p>`;
+                    break;
+                    case 'Ear Pain':
+                    solutionDisplay.innerHTML = `<h3>Ear Pain</h3><p><strong>Medical Solution:</strong> Take ibuprofen (Advil, Motrin IB, others) as directed by your healthcare provider. Ensure proper hydration and rest.<p><strong>Natural Solution:</strong> To reduce Ear pain, you should put the myrobalan in your mouth. <p> And To reduce ear pain, start by identifying the underlying cause. If it's due to an ear infection, consult a healthcare provider for proper diagnosis and treatment, which may include antibiotics. In the meantime, applying a warm compress to the affected ear can help alleviate discomfort and reduce inflammation. Over-the-counter pain relievers such as ibuprofen or acetaminophen can also provide relief. Avoid inserting objects into the ear canal and protect the ear from water if there's sensitivity or infection. If the pain persists or is accompanied by other symptoms like fever or hearing loss, seek medical attention promptly for further evaluation and appropriate management. </p>`;
+                    break;
+                    case 'Cold':
+                    solutionDisplay.innerHTML = '<h3>Cold</h3><p><strong>Medical Solution:</strong> Take acetaminophen (Tylenol, others), ibuprofen (Advil, Motrin IB, others) as directed by your healthcare provider. Ensure proper hydration and rest.<p><strong>Natural Solution:</strong> To reduce Cold, Drink neem juice.<p> And To reduce a cold, focus on supportive care to aid your body natural healing process. Ensure adequate hydration by drinking plenty of fluids such as water, herbal teas, or electrolyte drinks. Rest is crucial to help your immune system fight off the virus effectively. Steam inhalation can alleviate nasal congestion, while a warm saltwater gargle soothes a sore throat and reduces inflammation. Over-the-counter medications like decongestants or pain relievers (such as acetaminophen or ibuprofen) can alleviate symptoms like congestion and fever. Use a humidifier to add moisture to the air, which helps ease breathing. Eating a balanced diet rich in vitamins and minerals supports overall health and recovery. </p>';
+                  break;
+                  case 'Teeth Pain':
+                    solutionDisplay.innerHTML = '<h3>Teeth Pain</h3><p><strong>Medical Solution:</strong> Take ibuprofen (Advil, Motrin IB, and generic) and naproxen (Aleve and generic) as directed by your healthcare provider. Ensure proper hydration and rest.<p><strong>Natural Solution:</strong> To reduce Teeth pain, Eat cloves.<p> And To alleviate tooth pain, several home remedies can provide relief until you can see a dentist for proper diagnosis and treatment. Start by rinsing your mouth with warm saltwater, which helps reduce inflammation and soothe the area. Applying a cold compress or ice pack wrapped in a cloth to the outside of your cheek near the painful tooth can numb the pain and reduce swelling. Over-the-counter pain relievers like acetaminophen or ibuprofen can also help manage discomfort and inflammation. Avoiding extremely hot or cold foods and maintaining good oral hygiene by gently brushing and flossing can prevent further irritation. If the pain persists or worsens, or if you notice signs of infection such as swelling or fever, its essential to seek dental care promptly to address the underlying cause. </p>';                
+                  break;
+                  case 'Digestive':
+                    solutionDisplay.innerHTML = '<h3>Digestive</h3><p><strong>Medical Solution:</strong> Take paracetamol (acetaminophen) as directed by your healthcare provider. Ensure proper hydration and rest.<p><strong>Natural Solution:</strong> To reduce Digestive problems, Eat cumin.<p> And To reduce digestive problems, its essential to adopt a holistic approach that includes lifestyle changes and dietary adjustments. Start by eating smaller, more frequent meals to ease the burden on your digestive system. Chew your food thoroughly and eat slowly to aid digestion and prevent issues like bloating or indigestion. Ensure you stay hydrated by drinking plenty of water throughout the day, which helps maintain healthy bowel movements and overall digestive function.</p>';                
+                break;
+                  case 'Stomach Pain':
+                    solutionDisplay.innerHTML = '<h3>Stomach Pain</h3><p><strong>Medical Solution:</strong> Take paracetamol (acetaminophen) as directed by your healthcare provider. Ensure proper hydration and rest.<p><strong>Natural Solution:</strong> To reduce Stomach pain, Drink the water mixed with the bishops weed .<p> And To alleviate stomach pain, its essential to approach it with a combination of home remedies and lifestyle adjustments. Start by identifying potential triggers in your diet, such as spicy foods, fatty meals, or foods that commonly cause indigestion. Eating smaller, more frequent meals can help ease digestion and reduce discomfort. Stay hydrated throughout the day with water, as dehydration can exacerbate stomach issues. </p>';                
+                  break;
+                // Add more cases for other problems as needed
+                default:
+                    solutionDisplay.innerHTML = '';
+            }
+        });
+    </script>
+</body>
+</html>
